@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "welcome-image.png",
+      "filename" : "welcome-icon.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
