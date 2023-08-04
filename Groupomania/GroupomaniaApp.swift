@@ -11,7 +11,7 @@ import SwiftUI
 struct GroupomaniaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CarouselView()
         }
     }
 }

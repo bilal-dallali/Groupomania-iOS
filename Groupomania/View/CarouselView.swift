@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CarouselView: View {
     
-    
-        
     @State private var titleIndex: Int = 0
     @State private var subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     
@@ -126,7 +124,9 @@ struct ContentView: View {
                         VStack(spacing: 12) {
                             if titleIndex == 0 {
                                 Button {
-                                    titleIndex = 1
+                                    withAnimation {
+                                        titleIndex = 1
+                                    }
                                 } label: {
                                     Text("Next")
                                         .foregroundColor(Color("White"))
@@ -139,7 +139,9 @@ struct ContentView: View {
                                 }
                             } else if titleIndex == 1 {
                                 Button {
-                                    titleIndex = 2
+                                    withAnimation {
+                                        titleIndex = 2
+                                    }
                                 } label: {
                                     Text("Next")
                                         .foregroundColor(Color("White"))
@@ -152,7 +154,7 @@ struct ContentView: View {
                                 }
                             } else {
                                 NavigationLink {
-                                    Text("hello")
+                                    WelcomeView()
                                 } label: {
                                     Text("Next")
                                         .foregroundColor(Color("White"))
@@ -165,8 +167,8 @@ struct ContentView: View {
                                 }
                             }
                             
-                            Button {
-                                //
+                            NavigationLink {
+                                WelcomeView()
                             } label: {
                                 Text("Skip")
                                     .foregroundColor(Color("White"))
@@ -201,6 +203,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CarouselView()
     }
 }

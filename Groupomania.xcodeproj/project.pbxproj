@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9CF176422A79429100B3A47E /* GroupomaniaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF176412A79429100B3A47E /* GroupomaniaApp.swift */; };
-		9CF176442A79429100B3A47E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF176432A79429100B3A47E /* ContentView.swift */; };
+		9CF176442A79429100B3A47E /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF176432A79429100B3A47E /* CarouselView.swift */; };
 		9CF176462A79429200B3A47E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF176452A79429200B3A47E /* Assets.xcassets */; };
 		9CF176492A79429200B3A47E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CF176482A79429200B3A47E /* Preview Assets.xcassets */; };
 		9CF176622A794A9300B3A47E /* Urbanist-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CF176502A794A9200B3A47E /* Urbanist-ExtraBoldItalic.ttf */; };
@@ -29,12 +29,14 @@
 		9CF176712A794A9300B3A47E /* Urbanist-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CF1765F2A794A9300B3A47E /* Urbanist-MediumItalic.ttf */; };
 		9CF176722A794A9300B3A47E /* Urbanist-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CF176602A794A9300B3A47E /* Urbanist-ExtraBold.ttf */; };
 		9CF176732A794A9300B3A47E /* Urbanist-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CF176612A794A9300B3A47E /* Urbanist-Bold.ttf */; };
+		9CF4ED322A7D5A200057DB28 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4ED312A7D5A200057DB28 /* WelcomeView.swift */; };
+		9CF4ED342A7D5B760057DB28 /* BackButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF4ED332A7D5B760057DB28 /* BackButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9CF1763E2A79429100B3A47E /* Groupomania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groupomania.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF176412A79429100B3A47E /* GroupomaniaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupomaniaApp.swift; sourceTree = "<group>"; };
-		9CF176432A79429100B3A47E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CF176432A79429100B3A47E /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		9CF176452A79429200B3A47E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CF176482A79429200B3A47E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9CF176502A794A9200B3A47E /* Urbanist-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 		9CF176602A794A9300B3A47E /* Urbanist-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-ExtraBold.ttf"; sourceTree = "<group>"; };
 		9CF176612A794A9300B3A47E /* Urbanist-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Urbanist-Bold.ttf"; sourceTree = "<group>"; };
 		9CF176742A794AAA00B3A47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9CF4ED312A7D5A200057DB28 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		9CF4ED332A7D5B760057DB28 /* BackButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +94,8 @@
 			children = (
 				9CF176742A794AAA00B3A47E /* Info.plist */,
 				9CF1764F2A794A7700B3A47E /* Fonts */,
+				9CF4ED302A7D59FA0057DB28 /* View */,
 				9CF176412A79429100B3A47E /* GroupomaniaApp.swift */,
-				9CF176432A79429100B3A47E /* ContentView.swift */,
 				9CF176452A79429200B3A47E /* Assets.xcassets */,
 				9CF176472A79429200B3A47E /* Preview Content */,
 			);
@@ -129,6 +133,16 @@
 				9CF176552A794A9200B3A47E /* Urbanist-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9CF4ED302A7D59FA0057DB28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CF176432A79429100B3A47E /* CarouselView.swift */,
+				9CF4ED312A7D5A200057DB28 /* WelcomeView.swift */,
+				9CF4ED332A7D5B760057DB28 /* BackButtonView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF176442A79429100B3A47E /* ContentView.swift in Sources */,
+				9CF176442A79429100B3A47E /* CarouselView.swift in Sources */,
+				9CF4ED322A7D5A200057DB28 /* WelcomeView.swift in Sources */,
 				9CF176422A79429100B3A47E /* GroupomaniaApp.swift in Sources */,
+				9CF4ED342A7D5B760057DB28 /* BackButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
